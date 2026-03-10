@@ -13,7 +13,7 @@ const certifications = [
         color: "from-amber-400 to-orange-500",
         bg: "bg-amber-500/10",
         border: "border-amber-500/20",
-        imagePadding: "p-0"
+        fullBleed: true
     },
     {
         title: "SAP Billing and Revenue Innovation Mgmt. - Subscription Order Management",
@@ -23,8 +23,7 @@ const certifications = [
         link: "https://www.credly.com/badges/43e34dc2-439a-42b3-a86a-30baf9ebf842",
         color: "from-emerald-400 to-teal-500",
         bg: "bg-emerald-500/10",
-        border: "border-emerald-500/20",
-        imagePadding: "p-4 md:p-5"
+        border: "border-emerald-500/20"
     },
     {
         title: "SAP Certified Development Associate - ABAP on NetWeaver 7.50",
@@ -34,8 +33,7 @@ const certifications = [
         link: "",
         color: "from-purple-400 to-pink-500",
         bg: "bg-purple-500/10",
-        border: "border-purple-500/20",
-        imagePadding: "p-4 md:p-5"
+        border: "border-purple-500/20"
     },
     {
         title: "SAP Certified Development Associate - ABAP on HANA",
@@ -45,8 +43,7 @@ const certifications = [
         link: "",
         color: "from-sky-400 to-cyan-500",
         bg: "bg-sky-500/10",
-        border: "border-sky-500/20",
-        imagePadding: "p-4 md:p-5"
+        border: "border-sky-500/20"
     },
     {
         title: "SAP Certified Associate - SAP GenAI",
@@ -56,8 +53,7 @@ const certifications = [
         link: "",
         color: "from-blue-400 to-indigo-500",
         bg: "bg-blue-500/10",
-        border: "border-blue-500/20",
-        imagePadding: "p-4 md:p-5"
+        border: "border-blue-500/20"
     }
 ];
 
@@ -118,7 +114,7 @@ interface Certification {
     color: string;
     bg: string;
     border: string;
-    imagePadding?: string;
+    fullBleed?: boolean;
 }
 
 function CertCard({ cert }: { cert: Certification }) {
@@ -133,9 +129,15 @@ function CertCard({ cert }: { cert: Certification }) {
 
                 {/* Short Name or Image inside circle */}
                 {cert.image ? (
-                    <div className="absolute inset-0 z-10 rounded-full overflow-hidden flex items-center justify-center">
-                        <Image src={cert.image} alt={cert.title} fill className={`object-contain ${cert.imagePadding || "p-4 md:p-5"}`} />
-                    </div>
+                    cert.fullBleed ? (
+                        <div className="absolute inset-0 z-10 rounded-full overflow-hidden flex items-center justify-center">
+                            <Image src={cert.image} alt={cert.title} fill className="object-contain" />
+                        </div>
+                    ) : (
+                        <div className="relative w-24 h-24 md:w-32 md:h-32 z-10">
+                            <Image src={cert.image} alt={cert.title} fill className="object-contain drop-shadow-lg" />
+                        </div>
+                    )
                 ) : (
                     <h4 className="relative z-10 text-xl md:text-2xl font-bold text-center text-white drop-shadow-md">
                         {cert.short}
