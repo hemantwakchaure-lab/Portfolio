@@ -3,7 +3,9 @@ import Overlay from "@/components/Overlay";
 import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
 import Experience from "@/components/Experience";
+import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -15,10 +17,9 @@ export default function Home() {
       <Education />
       <Certifications />
       <Experience />
+      <Skills />
       <Projects />
-      <footer className="py-8 text-center text-sm text-neutral-500 border-t border-white/5">
-        <p>© {new Date().getFullYear()} Hemant Wakchaure. All rights reserved.</p>
-      </footer>
+      <Contact />
     </main>
   );
 }

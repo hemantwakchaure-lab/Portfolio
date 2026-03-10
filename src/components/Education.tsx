@@ -34,16 +34,26 @@ export default function Education() {
                         <div className="absolute -left-[41px] md:-left-[57px] top-1.5 w-4 h-4 bg-[#121212] border-2 border-blue-500 rounded-full group-hover:bg-blue-500 transition-colors duration-300 shadow-[0_0_10px_rgba(59,130,246,0.5)]" />
 
                         <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 md:gap-8">
-                            <div className="space-y-1">
-                                <h3 className="text-2xl font-bold text-white tracking-tight">
-                                    Master of Engineering Management
-                                </h3>
-                                <h4 className="text-lg text-blue-400 font-medium tracking-wide">
-                                    Duke University
-                                </h4>
-                                <p className="text-neutral-400 text-sm">
-                                    Specialization: Program and Project Management
-                                </p>
+                            <div className="space-y-4">
+                                <div>
+                                    <h3 className="text-2xl font-bold text-white tracking-tight">
+                                        Master of Engineering Management
+                                    </h3>
+                                    <h4 className="text-lg text-blue-400 font-medium tracking-wide">
+                                        Duke University
+                                    </h4>
+                                    <p className="text-neutral-300 font-medium text-sm mt-1">
+                                        Specialization: Program and Project Management
+                                    </p>
+                                </div>
+                                <div className="p-4 bg-white/5 border border-white/10 rounded-xl max-w-2xl mt-4">
+                                    <p className="text-xs text-neutral-400 font-semibold mb-2 uppercase tracking-widest">
+                                        Relevant Coursework
+                                    </p>
+                                    <p className="text-neutral-300 text-sm leading-relaxed">
+                                        Finance • Software Business Management • Managing Product Design • Design Thinking & Innovation • Marketing
+                                    </p>
+                                </div>
                             </div>
 
                             <div className="shrink-0 mt-2 md:mt-0">
