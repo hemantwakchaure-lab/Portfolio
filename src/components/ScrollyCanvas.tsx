@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useScroll, useTransform, useMotionValueEvent, useSpring } from "framer-motion";
 
 const FRAME_COUNT = 120;
 const FRAME_PREFIX = "frame_";
@@ -42,18 +42,25 @@ export default function ScrollyCanvas() {
     offset: ["start start", "end end"],
   });
 
-  // Map 0 -> 1 scroll to 0 -> 119 frames
-  const frameIndex = useTransform(scrollYProgress, [0, 1], [0, FRAME_COUNT - 1]);
+  // Add spring physics for smoother interpolation
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
+  // Map smoothed scroll to 0 -> 119 frames
+  const frameIndex = useTransform(smoothProgress, [0, 1], [0, FRAME_COUNT - 1]);
 
   // Handle canvas drawing drawing when frame changes
   useMotionValueEvent(frameIndex, "change", (latest) => {
     if (!loaded || images.length === 0 || !canvasRef.current) return;
-    
+
     const currFrame = Math.round(latest);
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
-    
+
     const img = images[currFrame];
     if (!img) return;
 
@@ -89,9 +96,9 @@ export default function ScrollyCanvas() {
         canvasRef.current.height = window.innerHeight;
       }
       // Trigger a re-draw of the current frame
-      frameIndex.set(frameIndex.get() + 0.0001); 
+      frameIndex.set(frameIndex.get() + 0.0001);
     };
-    
+
     // Initial size
     handleResize();
 
