@@ -62,26 +62,29 @@ export default function Projects() {
           </h2>
         </motion.div>
 
-        {/* Horizontal Scroll Container */}
-        <div className="flex overflow-x-auto pb-12 pt-4 px-4 gap-6 md:gap-8 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        {/* Grid Container */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {projects.map((project, index) => (
             <motion.div
               onClick={() => setSelectedPdf(project.link)}
               key={project.id}
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "0px" }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-              className="group relative flex-none w-[280px] md:w-[360px] lg:w-[420px] aspect-[4/5] md:aspect-[4/3] rounded-3xl overflow-hidden cursor-pointer snap-center shadow-xl hover:shadow-2xl hover:shadow-white/10 transition-all duration-500 hover:-translate-y-2"
+              className="group relative block aspect-[4/3] rounded-3xl overflow-hidden cursor-pointer shadow-xl hover:shadow-2xl hover:shadow-white/10 transition-all duration-500 hover:-translate-y-2"
             >
-              {/* Background Image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-110"
-                style={{ backgroundImage: `url(${project.image})` }}
-              />
+              {/* Background Image - using object-cover to fit window perfectly without stretching */}
+              <div className="absolute inset-0 w-full h-full">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                />
+              </div>
 
               {/* Dark Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 md:opacity-60 transition-opacity duration-500 group-hover:opacity-90" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-90" />
 
               {/* Glassmorphism content block */}
               <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 p-5 md:p-6 rounded-2xl backdrop-blur-md bg-white/5 border border-white/10 text-white transition-all duration-500 translate-y-2 md:translate-y-4 opacity-100 md:opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
