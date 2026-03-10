@@ -1,5 +1,6 @@
 import ScrollyCanvas from "@/components/ScrollyCanvas";
 import Overlay from "@/components/Overlay";
+import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -11,6 +12,7 @@ export default function Home() {
         <ScrollyCanvas />
         <Overlay />
       </div>
+      <Education />
       <Certifications />
       <Experience />
       <Projects />
