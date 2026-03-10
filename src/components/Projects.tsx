@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 const projects = [
   {
@@ -76,10 +77,11 @@ export default function Projects() {
             >
               {/* Background Image - using object-cover to fit window perfectly without stretching */}
               <div className="absolute inset-0 w-full h-full">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                  fill
+                  className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
                 />
               </div>
 

@@ -17,14 +17,14 @@ export default function Contact() {
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-blue-500/20 blur-[100px] rounded-full pointer-events-none" />
 
                     <h3 className="text-sm uppercase tracking-widest text-neutral-400 mb-4 relative z-10">
-                        What's Next?
+                        What&apos;s Next?
                     </h3>
                     <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-8 relative z-10">
                         Get In Touch
                     </h2>
 
                     <p className="text-neutral-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 relative z-10 leading-relaxed">
-                        I'm always open to discussing product design work, program management opportunities, or new strategic partnerships. Let's build something amazing together.
+                        I&apos;m always open to discussing product design work, program management opportunities, or new strategic partnerships. Let&apos;s build something amazing together.
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6 relative z-10">

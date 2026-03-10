@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useState, useRef } from "react";
 
 const skillCategories = [
     {
@@ -97,7 +96,7 @@ export default function Skills() {
                 </motion.div>
 
                 <div className="space-y-16 md:space-y-24">
-                    {skillCategories.map((category, catIndex) => (
+                    {skillCategories.map((category) => (
                         <motion.div
                             key={category.title}
                             initial={{ opacity: 0 }}
