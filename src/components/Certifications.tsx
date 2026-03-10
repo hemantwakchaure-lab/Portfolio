@@ -134,7 +134,7 @@ function CertCard({ cert }: { cert: Certification }) {
                             <Image src={cert.image} alt={cert.title} fill className="object-contain" />
                         </div>
                     ) : (
-                        <div className="relative w-24 h-24 md:w-32 md:h-32 z-10">
+                        <div className="relative w-32 h-32 md:w-40 md:h-40 z-10">
                             <Image src={cert.image} alt={cert.title} fill className="object-contain drop-shadow-lg" />
                         </div>
                     )
