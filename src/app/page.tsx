@@ -1,5 +1,6 @@
 import ScrollyCanvas from "@/components/ScrollyCanvas";
 import Overlay from "@/components/Overlay";
+import Certifications from "@/components/Certifications";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 
@@ -10,6 +11,7 @@ export default function Home() {
         <ScrollyCanvas />
         <Overlay />
       </div>
+      <Certifications />
       <Experience />
       <Projects />
       <footer className="py-8 text-center text-sm text-neutral-500 border-t border-white/5">
