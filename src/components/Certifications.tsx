@@ -1,12 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const certifications = [
     {
         title: "Project Management Professional (PMP)",
         issuer: "Project Management Institute",
         short: "PMP®",
+        image: "/pmp-logo.png",
         color: "from-amber-400 to-orange-500",
         bg: "bg-amber-500/10",
         border: "border-amber-500/20"
@@ -84,10 +86,16 @@ export default function Certifications() {
                                 {/* Spinning border effect on hover */}
                                 <div className={`absolute inset-[-2px] bg-gradient-to-r ${cert.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-[spin_4s_linear_infinite] [mask-image:linear-gradient(transparent,transparent),linear-gradient(#000,#000)] [mask-clip:padding-box,border-box] [mask-composite:exclude] border-[2px] border-transparent rounded-full`} />
 
-                                {/* Short Name inside circle */}
-                                <h4 className="relative z-10 text-xl md:text-2xl font-bold text-center text-white drop-shadow-md">
-                                    {cert.short}
-                                </h4>
+                                {/* Short Name or Image inside circle */}
+                                {cert.image ? (
+                                    <div className="relative w-24 h-24 md:w-32 md:h-32 z-10">
+                                        <Image src={cert.image} alt={cert.title} fill className="object-contain drop-shadow-lg" />
+                                    </div>
+                                ) : (
+                                    <h4 className="relative z-10 text-xl md:text-2xl font-bold text-center text-white drop-shadow-md">
+                                        {cert.short}
+                                    </h4>
+                                )}
                             </div>
 
                             {/* Full Title below circle */}
