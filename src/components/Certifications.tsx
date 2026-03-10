@@ -103,7 +103,19 @@ export default function Certifications() {
     );
 }
 
-function CertCard({ cert }: { cert: any }) {
+// Define explicit type to fix Next.js / ESLint build error
+interface Certification {
+    title: string;
+    issuer: string;
+    short: string;
+    image: string;
+    link: string;
+    color: string;
+    bg: string;
+    border: string;
+}
+
+function CertCard({ cert }: { cert: Certification }) {
     return (
         <>
             {/* The Circle */}
