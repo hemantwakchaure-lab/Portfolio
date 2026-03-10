@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Netflix Product Strategy",
+    title: "Netflix Product Acquisition & Revenue Model",
     category: "Case Study",
     image: "/Netflix-cover.jpg",
     link: "/Netflix-presentation.pdf",
@@ -27,7 +27,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Tinder Pricing Strategy",
+    title: "Tinder Product Teardown",
     category: "Pricing Strategy",
     image: "/Tinder-Pricing-Strategy-cover.jpg",
     link: "/Tinder-Pricing-Strategy-presentation.pdf",
@@ -72,7 +72,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-              className="group relative block aspect-[4/3] rounded-3xl overflow-hidden cursor-pointer shadow-xl hover:shadow-2xl hover:shadow-white/10 transition-all duration-500 hover:-translate-y-2"
+              className="group relative block aspect-[16/10] w-full max-w-xl mx-auto rounded-3xl overflow-hidden cursor-pointer shadow-xl hover:shadow-2xl hover:shadow-white/10 transition-all duration-500 hover:-translate-y-2"
             >
               {/* Background Image - using object-cover to fit window perfectly without stretching */}
               <div className="absolute inset-0 w-full h-full">
@@ -83,11 +83,11 @@ export default function Projects() {
                 />
               </div>
 
-              {/* Dark Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-90" />
+              {/* Dark Overlay gradient - Always slightly visible so text is readable */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-95" />
 
-              {/* Glassmorphism content block */}
-              <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 p-5 md:p-6 rounded-2xl backdrop-blur-md bg-white/5 border border-white/10 text-white transition-all duration-500 translate-y-2 md:translate-y-4 opacity-100 md:opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+              {/* Glassmorphism content block - Always visible */}
+              <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 p-4 md:p-6 rounded-2xl backdrop-blur-md bg-black/40 border border-white/10 text-white transition-all duration-500">
                 <p className="text-[10px] md:text-xs text-neutral-300 font-medium mb-1 md:mb-2 tracking-wider uppercase">
                   {project.category}
                 </p>
