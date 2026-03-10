@@ -88,8 +88,8 @@ export default function Certifications() {
 
                                 {/* Short Name or Image inside circle */}
                                 {cert.image ? (
-                                    <div className="relative w-24 h-24 md:w-32 md:h-32 z-10">
-                                        <Image src={cert.image} alt={cert.title} fill className="object-contain drop-shadow-lg" />
+                                    <div className="absolute inset-0 z-10 rounded-full overflow-hidden flex items-center justify-center p-1">
+                                        <Image src={cert.image} alt={cert.title} fill className="object-contain" />
                                     </div>
                                 ) : (
                                     <h4 className="relative z-10 text-xl md:text-2xl font-bold text-center text-white drop-shadow-md">
