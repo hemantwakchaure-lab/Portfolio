@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 const sapItems = [
     {
         id: 1,
-        title: "SAP BRIM Implementation Strategy",
-        category: "Ideation",
-        description: "Architectural designs and strategy for implementing Billing and Revenue Innovation Management in high-volume environments, reducing integration complexity and enabling scalable subscription billing.",
+        title: "SAP on AWS Architecture",
+        category: "Cloud Strategy",
+        description: "Designing scalable and resilient SAP landscapes hosted on Amazon Web Services, optimizing for high availability, performance, and disaster recovery.",
     },
     {
         id: 2,
-        title: "Generative AI in O2C Workflows",
-        category: "Capability",
-        description: "Intelligent automation solutions using Generative AI to streamline Order-to-Cash processes, reducing manual interventions by 40% and enhancing enterprise scalability.",
+        title: "SAP AI for Sales Order Automation",
+        category: "Generative AI",
+        description: "Intelligent automation solutions using SAP Business AI to streamline Order-to-Cash processes, significantly reducing manual interventions and accelerating fulfillment.",
     },
     {
         id: 3,
-        title: "S/4HANA Transformation Roadmap",
-        category: "Project",
-        description: "End-to-end transformation roadmap focusing on phased deployment, RAID mitigation, and operational efficiency, resulting in a 45% reduction in application maintenance costs.",
+        title: "SAP BRIM Implementation Strategy",
+        category: "Ideation",
+        description: "Architectural designs and strategy for implementing Billing and Revenue Innovation Management in high-volume environments, reducing integration complexity.",
     }
 ];
 
