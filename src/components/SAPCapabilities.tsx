@@ -1,47 +1,50 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import { client } from "@/sanity/client";
+import { urlFor } from "@/sanity/image";
+import { PortableText } from "@portabletext/react";
 
-const sapItems = [
-    {
-        id: 1,
-        title: "SAP on AWS Architecture",
-        category: "Cloud Strategy",
-        description: "Designing scalable and resilient SAP landscapes hosted on Amazon Web Services, optimizing for high availability, performance, and disaster recovery.",
-        image: "/sap/aws-architecture.jpg", // Add your image to public/sap/aws-architecture.jpg
-        details: [
-            "Architected a robust and highly available SAP S/4HANA landscape deployment on AWS, utilizing multi-AZ configurations and AWS native services for disaster recovery and automated backups.",
-            "Key achievements include reducing infrastructure costs by right-sizing EC2 instances using AWS Compute Optimizer and migrating legacy databases to Amazon HANA instances.",
-        ]
-    },
-    {
-        id: 2,
-        title: "SAP AI for Sales Order Automation",
-        category: "Generative AI",
-        description: "Intelligent automation solutions using SAP Business AI to streamline Order-to-Cash processes, significantly reducing manual interventions and accelerating fulfillment.",
-        image: "/sap/ai-sales-order.jpg", // Add your image to public/sap/ai-sales-order.jpg
-        details: [
-            "Leveraged SAP Business AI and Generative AI capabilities to automate data extraction from unstructured sales orders (PDFs, emails), reducing manual data entry by 40%.",
-            "This initiative drastically improved order-to-cash (O2C) cycle times, enhanced data accuracy, and freed up customer service representatives to focus on high-value client interactions.",
-        ]
-    },
-    {
-        id: 3,
-        title: "SAP BRIM Implementation Strategy",
-        category: "Ideation",
-        description: "Architectural designs and strategy for implementing Billing and Revenue Innovation Management in high-volume environments, reducing integration complexity.",
-        image: "/sap/brim-strategy.jpg", // Add your image to public/sap/brim-strategy.jpg
-        details: [
-            "Devised a comprehensive roadmap for integrating SAP BRIM into a complex enterprise landscape composed of varied legacy billing systems.",
-            "The strategy emphasizes decoupled architecture for Convergent Invoicing, minimizing synchronization touchpoints and enhancing the throughput capable of handling millions of subscription events per hour.",
-        ]
-    }
-];
+// The shape of our Sanity document
+interface SAPCapability {
+    _id: string;
+    title: string;
+    category: string;
+    description: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    coverImage: any;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    content: any[];
+}
 
 export default function SAPCapabilities() {
-    const [selectedItem, setSelectedItem] = useState<(typeof sapItems)[0] | null>(null);
+    const [sapItems, setSapItems] = useState<SAPCapability[]>([]);
+    const [selectedItem, setSelectedItem] = useState<SAPCapability | null>(null);
+
+    useEffect(() => {
+        const fetchCapabilities = async () => {
+            try {
+                // Fetch all published SAP Capabilities from Sanity
+                const data = await client.fetch<SAPCapability[]>(`
+                    *[_type == "sapCapability"] | order(_createdAt asc) {
+                        _id,
+                        title,
+                        category,
+                        description,
+                        coverImage,
+                        content
+                    }
+                `);
+                setSapItems(data);
+            } catch (error) {
+                console.error("Error fetching SAP capabilities:", error);
+            }
+        };
+
+        fetchCapabilities();
+    }, []);
 
     return (
         <section className="relative z-20 bg-[#121212] py-24 px-8 md:px-24">
@@ -67,7 +70,7 @@ export default function SAPCapabilities() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {sapItems.map((item, index) => (
                         <motion.div
-                            key={item.id}
+                            key={item._id}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
@@ -137,12 +140,16 @@ export default function SAPCapabilities() {
 
                                     {/* Image Header Area */}
                                     <div className="relative w-full h-64 md:h-80 bg-[#121212] flex items-center justify-center">
-                                        <Image
-                                            src={selectedItem.image}
-                                            alt={selectedItem.title}
-                                            fill
-                                            className="object-cover opacity-60"
-                                        />
+                                        {selectedItem.coverImage ? (
+                                            <Image
+                                                src={urlFor(selectedItem.coverImage).url()}
+                                                alt={selectedItem.title}
+                                                fill
+                                                className="object-cover opacity-60"
+                                            />
+                                        ) : (
+                                            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 to-purple-900/30 opacity-60" />
+                                        )}
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent" />
 
                                         <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 z-10">
@@ -157,12 +164,12 @@ export default function SAPCapabilities() {
 
                                     {/* Detailed Text Area */}
                                     <div className="p-8 md:p-12 space-y-8 bg-[#1a1a1a]">
-                                        <div className="prose prose-invert prose-blue max-w-none">
-                                            {selectedItem.details.map((paragraph, idx) => (
-                                                <p key={idx} className="text-neutral-300 text-base md:text-lg leading-relaxed mb-6">
-                                                    {paragraph}
-                                                </p>
-                                            ))}
+                                        <div className="prose prose-invert prose-blue max-w-none prose-img:rounded-xl prose-img:shadow-lg prose-headings:font-bold prose-a:text-blue-400">
+                                            {selectedItem.content ? (
+                                                <PortableText value={selectedItem.content} />
+                                            ) : (
+                                                <p className="text-neutral-500 italic">No detailed content provided for this capability.</p>
+                                            )}
                                         </div>
 
                                         {/* Optional Call to Action / Footer of Modal */}
