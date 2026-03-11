@@ -24,7 +24,7 @@ export default function Contact() {
                     </h2>
 
                     <p className="text-neutral-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 relative z-10 leading-relaxed">
-                        I&apos;m always open to discussing product design work, program management opportunities, or new strategic partnerships. Let&apos;s build something amazing together.
+                        I enjoy working at the intersection of technology, strategy, and execution. If you&apos;re building something exciting, I&apos;d love to connect.
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6 relative z-10">
