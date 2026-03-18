@@ -122,7 +122,7 @@ export default function Blogs() {
                             ) : (
                                 // Fallback image if non exists or placeholder data
                                 <Image
-                                    src="/blogs/placeholder.jpg"
+                                    src={blog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order%20-1.png" : "/blogs/placeholder.jpg"}
                                     alt={blog.title}
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -196,7 +196,7 @@ export default function Blogs() {
                                             />
                                         ) : (
                                             <Image
-                                                src="/blogs/placeholder.jpg"
+                                                src={selectedBlog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order%20-1.png" : "/blogs/placeholder.jpg"}
                                                 alt={selectedBlog.title}
                                                 fill
                                                 className="object-cover opacity-60"
