@@ -198,7 +198,7 @@ export default function Blogs() {
                                             />
                                         ) : (
                                             <Image
-                                                src={selectedBlog._id === "1" ? "/blogs/SAP%20on%20AWS/SAP%20on%20Aws.PNG" : "/blogs/placeholder.jpg"}
+                                                src={selectedBlog._id === "1" ? "/blogs/SAP%20on%20AWS/SAP%20on%20AWS%20(2).png" : "/blogs/placeholder.jpg"}
                                                 alt={selectedBlog.title}
                                                 fill
                                                 className="object-cover opacity-60"
@@ -232,6 +232,16 @@ export default function Blogs() {
                                                         <>
                                                             <p>As businesses strive to stay ahead in a rapidly evolving digital landscape, leveraging the right technology becomes paramount. One such powerful integration is SAP on AWS, which brings together the robustness of SAP&apos;s enterprise applications with the scalability and flexibility of Amazon Web Services (AWS). Let&apos;s dive into this integration, exploring each component and how they work together to drive innovation and efficiency.</p>
                                                             
+                                                            <div className="my-8 relative w-full h-auto rounded-xl overflow-hidden bg-white/5 border border-white/10">
+                                                                <Image
+                                                                    src="/blogs/SAP%20on%20AWS/SAP%20on%20Aws.PNG"
+                                                                    alt="SAP on AWS Architecture diagram"
+                                                                    width={1200}
+                                                                    height={600}
+                                                                    className="w-full h-auto object-contain"
+                                                                />
+                                                            </div>
+
                                                             <h3>A Closer Look at Each Component</h3>
                                                             
                                                             <h4>AWS Cloud</h4>
@@ -280,6 +290,16 @@ export default function Blogs() {
                                                                 <li><strong>Internal Traffic Management:</strong> The Network Load Balancer manages internal traffic between SAP components, ensuring smooth communication and high performance.</li>
                                                                 <li><strong>Security and Access Control:</strong> Amazon Cognito manages user authentication and authorization, ensuring that only authorized users have access to the system.</li>
                                                             </ul>
+
+                                                            <div className="my-8 relative w-full h-auto rounded-xl overflow-hidden bg-white/5 border border-white/10 p-4 flex justify-center">
+                                                                <Image
+                                                                    src="/blogs/SAP%20on%20AWS/SAP%20on%20AWS%20(2).png"
+                                                                    alt="SAP on AWS Component Details"
+                                                                    width={800}
+                                                                    height={400}
+                                                                    className="w-full max-w-3xl h-auto object-contain rounded-lg"
+                                                                />
+                                                            </div>
                                                             
                                                             <h3>A Personal Touch: Why This Matters</h3>
                                                             <p>As someone who has seen the evolution of enterprise systems, the integration of SAP on AWS is a game-changer. It combines the best of both worlds—SAP&apos;s powerful business applications and AWS&apos;s scalable cloud infrastructure. This setup not only enhances operational efficiency but also opens doors to innovative possibilities like voice-controlled operations and real-time data synchronization.</p>
