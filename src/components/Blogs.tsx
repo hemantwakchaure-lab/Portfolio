@@ -376,7 +376,7 @@ export default function Blogs() {
                                                             
                                                             <div className="my-10 relative w-full h-auto rounded-2xl overflow-hidden bg-white/5 border border-white/10 shadow-2xl">
                                                                 <Image
-                                                                    src="/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order%20-1.JPG"
+                                                                    src="/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order%20-1.png"
                                                                     alt="SAP Gen AI Automating Sales Order overview"
                                                                     width={1200}
                                                                     height={600}
@@ -472,7 +472,7 @@ export default function Blogs() {
                                                             
                                                             <div className="my-12 relative w-full h-auto rounded-xl overflow-hidden bg-white/5 border border-white/10 p-6 flex justify-center shadow-lg">
                                                                 <Image
-                                                                    src="/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order%20-2.JPG"
+                                                                    src="/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order%20-2.png"
                                                                     alt="SAP Gen AI Workflow components"
                                                                     width={800}
                                                                     height={400}
