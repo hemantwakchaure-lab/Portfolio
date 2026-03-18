@@ -122,7 +122,7 @@ export default function Blogs() {
                             ) : (
                                 // Fallback image if non exists or placeholder data
                                 <Image
-                                    src="/blogs/placeholder.jpg" // The user can drop placeholder.jpg here
+                                    src={blog._id === "1" ? "/blogs/SAP%20on%20AWS/SAP%20on%20AWS%20(2).png" : "/blogs/placeholder.jpg"}
                                     alt={blog.title}
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -198,7 +198,7 @@ export default function Blogs() {
                                             />
                                         ) : (
                                             <Image
-                                                src="/blogs/placeholder.jpg"
+                                                src={selectedBlog._id === "1" ? "/blogs/SAP%20on%20AWS/SAP%20on%20Aws.PNG" : "/blogs/placeholder.jpg"}
                                                 alt={selectedBlog.title}
                                                 fill
                                                 className="object-cover opacity-60"
