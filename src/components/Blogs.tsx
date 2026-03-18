@@ -369,6 +369,222 @@ export default function Blogs() {
                                                                 </p>
                                                             </div>
                                                         </>
+                                                    ) : selectedBlog._id === "2" ? (
+                                                        <>
+                                                            <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light">
+                                                                Creating sales orders in SAP has traditionally been a manual, time-consuming process involving multiple screens, validations, and back-and-forth inputs. But what if you could simply chat your way through it?
+                                                            </p>
+                                                            <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light mt-4">
+                                                                With the power of Generative AI, Microsoft Copilot, and SAP integrations, we can now automate this entire workflow using a conversational interface. Introducing <span className="font-semibold text-white">VisSapBot</span> — a GenAI-powered chatbot that simplifies sales order creation directly from Microsoft Teams.
+                                                            </p>
+                                                            
+                                                            <div className="my-10 relative w-full h-auto rounded-2xl overflow-hidden bg-white/5 border border-white/10 shadow-2xl">
+                                                                <Image
+                                                                    src="/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-1.JPG"
+                                                                    alt="SAP Gen AI Automating Sales Order overview"
+                                                                    width={1200}
+                                                                    height={600}
+                                                                    className="w-full h-auto object-contain"
+                                                                />
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-8 tracking-tight">
+                                                                💡 The Problem
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-4">Sales order creation in SAP often involves:</p>
+                                                            <ul className="space-y-3 mb-6 text-neutral-400">
+                                                                <li className="flex items-start"><span className="text-blue-500 mr-2">▪</span> <div>Navigating complex UI screens</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-500 mr-2">▪</span> <div>Manually entering product and quantity details</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-500 mr-2">▪</span> <div>Checking stock availability</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-500 mr-2">▪</span> <div>Handling errors and rework</div></li>
+                                                            </ul>
+                                                            <p className="text-neutral-300 leading-relaxed mb-4">This leads to:</p>
+                                                            <ul className="space-y-3 mb-10 text-neutral-400">
+                                                                <li className="flex items-center"><span className="text-xl mr-3">⏳</span> <div className="font-medium">Increased processing time</div></li>
+                                                                <li className="flex items-center"><span className="text-xl mr-3">❌</span> <div className="font-medium text-red-300">Human errors</div></li>
+                                                                <li className="flex items-center"><span className="text-xl mr-3">📉</span> <div className="font-medium text-orange-300">Reduced productivity</div></li>
+                                                            </ul>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-8 tracking-tight">
+                                                                🤖 The Solution: VisSapBot
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">VisSapBot is a conversational AI assistant that allows users to:</p>
+                                                            <ul className="space-y-3 mb-10 text-neutral-300">
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✓</span> <div>Create sales orders using natural language</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✓</span> <div>Validate product availability in real time</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✓</span> <div>Automatically adjust quantities if stock is limited</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✓</span> <div>Confirm and generate orders instantly</div></li>
+                                                            </ul>
+                                                            
+                                                            <div className="bg-white/5 border border-white/10 p-6 rounded-xl mb-12 relative overflow-hidden">
+                                                                <div className="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
+                                                                <h4 className="text-white font-bold mb-4 flex items-center"><span className="mr-2">👉</span> Example interaction:</h4>
+                                                                <div className="space-y-4 font-mono text-sm md:text-base">
+                                                                    <div className="flex flex-col bg-white/5 p-3 rounded-lg mr-12">
+                                                                        <span className="text-blue-300 font-bold mb-1">User:</span>
+                                                                        <span className="text-neutral-200">&quot;Create a sales order for Visteon Display, quantity 10&quot;</span>
+                                                                    </div>
+                                                                    <div className="flex flex-col bg-blue-900/30 border border-blue-500/20 p-3 rounded-lg ml-12">
+                                                                        <span className="text-blue-400 font-bold mb-1">VisSapBot:</span>
+                                                                        <span className="text-neutral-200">&quot;Only 5 in stock. Do you want to proceed?&quot;</span>
+                                                                    </div>
+                                                                    <div className="flex flex-col bg-white/5 p-3 rounded-lg mr-12">
+                                                                        <span className="text-blue-300 font-bold mb-1">User:</span>
+                                                                        <span className="text-neutral-200">&quot;Yes&quot;</span>
+                                                                    </div>
+                                                                    <div className="flex flex-col bg-green-900/30 border border-green-500/20 p-3 rounded-lg ml-12">
+                                                                        <span className="text-green-400 font-bold mb-1">VisSapBot:</span>
+                                                                        <span className="text-white font-semibold">&quot;Sales order #91020202 created successfully ✅&quot;</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-8 tracking-tight">
+                                                                🏗️ Architecture Overview
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-8">The solution integrates multiple technologies to enable seamless automation:</p>
+                                                            
+                                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-blue-500/30 transition-colors">
+                                                                    <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center mb-4"><span className="text-blue-400 font-bold text-lg">1</span></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-2">Microsoft Teams</h4>
+                                                                    <p className="text-neutral-400 text-sm">Acts as the user interface where users interact with the chatbot.</p>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-purple-500/30 transition-colors">
+                                                                    <div className="w-10 h-10 bg-purple-500/10 rounded-full flex items-center justify-center mb-4"><span className="text-purple-400 font-bold text-lg">2</span></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-2">Copilot Studio</h4>
+                                                                    <p className="text-neutral-400 text-sm">Builds and customizes the conversational AI bot. Handles intent recognition and conversation flow.</p>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-blue-500/30 transition-colors">
+                                                                    <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center mb-4"><span className="text-blue-400 font-bold text-lg">3</span></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-2">Power Automate</h4>
+                                                                    <p className="text-neutral-400 text-sm">Acts as the orchestration layer. Connects the chatbot to SAP and executes workflows.</p>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-yellow-500/30 transition-colors">
+                                                                    <div className="w-10 h-10 bg-yellow-500/10 rounded-full flex items-center justify-center mb-4"><span className="text-yellow-400 font-bold text-lg">4</span></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-2">SAP ERP System</h4>
+                                                                    <p className="text-neutral-400 text-sm mb-2">Processes business logic and executes BAPIs such as:</p>
+                                                                    <code className="text-xs text-yellow-300 bg-yellow-900/30 px-2 py-1 rounded block mb-1">BAPI_SALESORDER_CREATEFROMDATA</code>
+                                                                    <code className="text-xs text-yellow-300 bg-yellow-900/30 px-2 py-1 rounded block">BAPI_SALESORDER_GETSTATUS</code>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-cyan-500/30 transition-colors md:col-span-2">
+                                                                    <div className="w-10 h-10 bg-cyan-500/10 rounded-full flex items-center justify-center mb-4"><span className="text-cyan-400 font-bold text-lg">5</span></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-2">Azure OpenAI</h4>
+                                                                    <p className="text-neutral-400 text-sm">Powers natural language understanding and enables human-like conversations.</p>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div className="my-12 relative w-full h-auto rounded-xl overflow-hidden bg-white/5 border border-white/10 p-6 flex justify-center shadow-lg">
+                                                                <Image
+                                                                    src="/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-2.JPG"
+                                                                    alt="SAP Gen AI Workflow components"
+                                                                    width={800}
+                                                                    height={400}
+                                                                    className="w-full max-w-4xl h-auto object-contain rounded-lg shadow-sm"
+                                                                />
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-8 tracking-tight">
+                                                                🔄 End-to-End Flow
+                                                            </h3>
+                                                            <ul className="space-y-4 mb-12 text-neutral-300 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
+                                                                {[
+                                                                    "User sends a request in Microsoft Teams",
+                                                                    "Copilot interprets the intent (create sales order)",
+                                                                    "Power Automate triggers a workflow",
+                                                                    "SAP BAPI checks product availability",
+                                                                    "Bot confirms or adjusts quantity",
+                                                                    "Sales order is created in SAP",
+                                                                    "Confirmation is sent back to the user"
+                                                                ].map((step, i) => (
+                                                                    <li key={i} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                                                                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#1a1a1a] shadow absolute left-0 md:mx-auto md:left-1/2 md:-translate-x-1/2 border border-white/20 group-hover:border-blue-400 group-hover:bg-blue-900/40 transition-colors z-10 text-sm font-bold text-white">
+                                                                            {i + 1}
+                                                                        </div>
+                                                                        <div className="w-full pl-14 md:w-5/12 md:pl-0 md:px-8">
+                                                                            <div className="p-4 bg-white/5 rounded-xl border border-white/10 group-hover:border-blue-500/20 group-hover:bg-white/10 transition-colors shadow-sm">
+                                                                                {step}
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+
+                                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-16">
+                                                                <div>
+                                                                    <h3 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-6 tracking-tight">✨ Key Features</h3>
+                                                                    <ul className="space-y-3 text-neutral-300">
+                                                                        <li className="flex items-center"><span className="mr-3">💬</span> Conversational interface (no SAP GUI needed)</li>
+                                                                        <li className="flex items-center"><span className="mr-3">⚡</span> Real-time stock validation</li>
+                                                                        <li className="flex items-center"><span className="mr-3">🔄</span> Dynamic user interaction</li>
+                                                                        <li className="flex items-center"><span className="mr-3">🔗</span> Seamless SAP integration</li>
+                                                                        <li className="flex items-center"><span className="mr-3">🧠</span> AI-powered understanding</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div>
+                                                                    <h3 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400 mb-6 tracking-tight">📈 Business Impact</h3>
+                                                                    <ul className="space-y-3 text-neutral-300">
+                                                                        <li className="flex items-center"><span className="mr-3">🚀</span> Faster order processing</li>
+                                                                        <li className="flex items-center"><span className="mr-3">🎯</span> Reduced manual errors</li>
+                                                                        <li className="flex items-center"><span className="mr-3">👩‍💻</span> Improved user experience</li>
+                                                                        <li className="flex items-center"><span className="mr-3">📊</span> Increased operational efficiency</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-8 tracking-tight">
+                                                                🔐 Considerations
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">While powerful, a few aspects must be handled carefully:</p>
+                                                            <div className="flex flex-wrap gap-3 mb-12">
+                                                                <span className="px-4 py-2 bg-red-900/20 text-red-300 rounded-full text-sm border border-red-500/20">Data security & SAP controls</span>
+                                                                <span className="px-4 py-2 bg-orange-900/20 text-orange-300 rounded-full text-sm border border-orange-500/20">Error handling & fallbacks</span>
+                                                                <span className="px-4 py-2 bg-blue-900/20 text-blue-300 rounded-full text-sm border border-blue-500/20">Logging & audit trails</span>
+                                                                <span className="px-4 py-2 bg-purple-900/20 text-purple-300 rounded-full text-sm border border-purple-500/20">API performance & latency</span>
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-8 tracking-tight">
+                                                                🔮 Future Enhancements
+                                                            </h3>
+                                                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+                                                                <div className="bg-white/5 border border-white/10 p-4 rounded-xl text-center">
+                                                                    <span className="text-3xl block mb-2">🎙️</span>
+                                                                    <p className="text-sm text-neutral-300">Voice-based order creation</p>
+                                                                </div>
+                                                                <div className="bg-white/5 border border-white/10 p-4 rounded-xl text-center">
+                                                                    <span className="text-3xl block mb-2">💡</span>
+                                                                    <p className="text-sm text-neutral-300">Predictive recommendations</p>
+                                                                </div>
+                                                                <div className="bg-white/5 border border-white/10 p-4 rounded-xl text-center">
+                                                                    <span className="text-3xl block mb-2">🔗</span>
+                                                                    <p className="text-sm text-neutral-300">Integration with CRM systems</p>
+                                                                </div>
+                                                                <div className="bg-white/5 border border-white/10 p-4 rounded-xl text-center">
+                                                                    <span className="text-3xl block mb-2">🌍</span>
+                                                                    <p className="text-sm text-neutral-300">Multi-language support</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-6 tracking-tight">
+                                                                🏁 Conclusion
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                VisSapBot demonstrates how Generative AI can transform traditional enterprise workflows into intuitive, conversational experiences. By combining SAP with modern AI tools like Azure OpenAI and Copilot Studio, organizations can unlock a new level of efficiency and user satisfaction.
+                                                            </p>
+                                                            
+                                                            <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-white/5 rounded-2xl p-8 mt-12 text-center">
+                                                                <span className="text-3xl mb-4 block">👤</span>
+                                                                <p className="text-neutral-300 italic mb-4">
+                                                                    This solution was originally designed by <strong className="text-white not-italic text-lg">Hemant Wakchaure</strong> as part of his work as an SAP Program Project Manager Intern.
+                                                                </p>
+                                                                <p className="text-neutral-400 mb-6 text-sm">
+                                                                    For any queries or collaboration opportunities, feel free to reach out.
+                                                                </p>
+                                                                <a href="mailto:hemant.wakchaure29@gmail.com" className="inline-block px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full transition-colors font-semibold shadow-lg shadow-blue-500/30">
+                                                                    hemant.wakchaure29@gmail.com
+                                                                </a>
+                                                            </div>
+                                                        </>
                                                     ) : (
                                                         <div className="flex flex-col items-center justify-center py-12 text-center h-full">
                                                             <svg className="w-16 h-16 text-neutral-600 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
