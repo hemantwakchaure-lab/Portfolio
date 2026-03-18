@@ -139,9 +139,7 @@ export default function Blogs() {
                             <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
                             <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end h-full">
-                                <p className="text-xs text-blue-400 font-semibold mb-2 tracking-widest uppercase opacity-80">
-                                    {blog.publishedAt ? new Date(blog.publishedAt).toLocaleDateString() : ''}
-                                </p>
+
                                 <h3 className="text-2xl font-bold text-white mb-3 leading-tight group-hover:text-blue-300 transition-colors">
                                     {blog.title}
                                 </h3>
@@ -211,9 +209,7 @@ export default function Blogs() {
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-[#1a1a1a]/40 to-transparent" />
 
                                         <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 z-10">
-                                            <p className="text-sm text-blue-400 font-semibold mb-3 tracking-widest uppercase">
-                                                {selectedBlog.publishedAt ? new Date(selectedBlog.publishedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }) : ''}
-                                            </p>
+
                                             <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-tight">
                                                 {selectedBlog.title}
                                             </h2>
