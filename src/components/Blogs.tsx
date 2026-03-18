@@ -230,9 +230,11 @@ export default function Blogs() {
                                                     {/* Fallback for the hardcoded placeholder blogs */}
                                                     {selectedBlog._id === "1" ? (
                                                         <>
-                                                            <p>As businesses strive to stay ahead in a rapidly evolving digital landscape, leveraging the right technology becomes paramount. One such powerful integration is SAP on AWS, which brings together the robustness of SAP&apos;s enterprise applications with the scalability and flexibility of Amazon Web Services (AWS). Let&apos;s dive into this integration, exploring each component and how they work together to drive innovation and efficiency.</p>
+                                                            <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light">
+                                                                As businesses strive to stay ahead in a rapidly evolving digital landscape, leveraging the right technology becomes paramount. One such powerful integration is <span className="font-semibold text-white">SAP on AWS</span>, which brings together the robustness of SAP&apos;s enterprise applications with the scalability and flexibility of Amazon Web Services (AWS). Let&apos;s dive into this integration, exploring each component and how they work together to drive innovation and efficiency.
+                                                            </p>
                                                             
-                                                            <div className="my-8 relative w-full h-auto rounded-xl overflow-hidden bg-white/5 border border-white/10">
+                                                            <div className="my-10 relative w-full h-auto rounded-2xl overflow-hidden bg-white/5 border border-white/10 shadow-2xl">
                                                                 <Image
                                                                     src="/blogs/SAP%20on%20AWS/SAP%20on%20Aws.PNG"
                                                                     alt="SAP on AWS Architecture diagram"
@@ -242,80 +244,130 @@ export default function Blogs() {
                                                                 />
                                                             </div>
 
-                                                            <h3>A Closer Look at Each Component</h3>
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-8 tracking-tight">
+                                                                A Closer Look at Each Component
+                                                            </h3>
                                                             
-                                                            <h4>AWS Cloud</h4>
-                                                            <p>The foundation of our setup, AWS Cloud, provides a reliable and scalable infrastructure. It&apos;s like the bedrock upon which everything else is built, ensuring that all components run smoothly and efficiently.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">AWS Cloud</h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                The foundation of our setup, AWS Cloud, provides a reliable and scalable infrastructure. It&apos;s like the bedrock upon which everything else is built, ensuring that all components run smoothly and efficiently.
+                                                            </p>
                                                             
-                                                            <h4>Mobile Apps and Websites</h4>
-                                                            <p>These are the user-facing applications that interact with the backend SAP systems. Whether it&apos;s a mobile app for on-the-go access or a website for detailed analysis, these interfaces allow users to interact seamlessly with SAP.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">Mobile Apps and Websites</h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                These are the user-facing applications that interact with the backend SAP systems. Whether it&apos;s a mobile app for on-the-go access or a website for detailed analysis, these interfaces allow users to interact seamlessly with SAP.
+                                                            </p>
                                                             
-                                                            <h4>Echo, IoT, and Other Services</h4>
-                                                            <p>Imagine controlling your business operations using voice commands or IoT devices. AWS integrates with Echo and IoT services to bring futuristic capabilities into your SAP ecosystem, making operations smarter and more intuitive.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">Echo, IoT, and Other Services</h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                Imagine controlling your business operations using voice commands or IoT devices. AWS integrates with Echo and IoT services to bring futuristic capabilities into your SAP ecosystem, making operations smarter and more intuitive.
+                                                            </p>
                                                             
-                                                            <h4>API Gateway</h4>
-                                                            <p>Think of the API Gateway as the doorman of a grand hotel. It securely handles and routes incoming requests to the appropriate backend services, ensuring that only authorized traffic gets through. This gateway supports seamless integration and communication between different components.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">API Gateway</h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                Think of the API Gateway as the doorman of a grand hotel. It securely handles and routes incoming requests to the appropriate backend services, ensuring that only authorized traffic gets through. This gateway supports seamless integration and communication between different components.
+                                                            </p>
                                                             
-                                                            <h4>AWS AppSync</h4>
-                                                            <p>AWS AppSync synchronizes data in real-time across mobile apps, websites, and other services. It&apos;s like having a highly efficient conductor ensuring that all parts of the orchestra play in perfect harmony, providing users with up-to-date information at all times.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">AWS AppSync</h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                AWS AppSync synchronizes data in real-time across mobile apps, websites, and other services. It&apos;s like having a highly efficient conductor ensuring that all parts of the orchestra play in perfect harmony, providing users with up-to-date information at all times.
+                                                            </p>
                                                             
-                                                            <h4>Amazon Cognito</h4>
-                                                            <p>Security is paramount, and Amazon Cognito takes care of that by managing user authentication and authorization. It ensures that only authorized users can access the SAP systems, adding an extra layer of security.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">Amazon Cognito</h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                Security is paramount, and Amazon Cognito takes care of that by managing user authentication and authorization. It ensures that only authorized users can access the SAP systems, adding an extra layer of security.
+                                                            </p>
                                                             
-                                                            <h4>Mobile Hub</h4>
-                                                            <p>Mobile Hub simplifies the development and deployment of mobile apps that interact with SAP. It provides a suite of tools and services that help developers create feature-rich mobile applications with ease.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">Mobile Hub</h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                Mobile Hub simplifies the development and deployment of mobile apps that interact with SAP. It provides a suite of tools and services that help developers create feature-rich mobile applications with ease.
+                                                            </p>
                                                             
-                                                            <h4>Virtual Private Cloud (VPC)</h4>
-                                                            <p>VPC is your private section of the AWS cloud where you can isolate resources for enhanced security and control. It&apos;s like having your own private island in the vast ocean of AWS, ensuring that your operations remain secure and isolated from others.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">Virtual Private Cloud (VPC)</h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                VPC is your private section of the AWS cloud where you can isolate resources for enhanced security and control. It&apos;s like having your own private island in the vast ocean of AWS, ensuring that your operations remain secure and isolated from others.
+                                                            </p>
                                                             
-                                                            <h4>Public Subnet</h4>
-                                                            <strong>Application Load Balancer (External)</strong>
-                                                            <p>Situated in the public subnet, the Application Load Balancer distributes incoming traffic across multiple targets (like EC2 instances). This ensures that your applications remain highly available and can handle varying loads without any hiccups.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">Public Subnet <span className="text-neutral-500 font-normal text-base ml-2">Application Load Balancer (External)</span></h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                Situated in the public subnet, the Application Load Balancer distributes incoming traffic across multiple targets (like EC2 instances). This ensures that your applications remain highly available and can handle varying loads without any hiccups.
+                                                            </p>
                                                             
-                                                            <h4>Private Subnet</h4>
-                                                            <strong>Network Load Balancer (Internal)</strong>
-                                                            <p>In the private subnet, the Network Load Balancer handles internal traffic between the SAP Gateway and SAP applications. It ensures low latency and high throughput for critical backend operations.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">Private Subnet <span className="text-neutral-500 font-normal text-base ml-2">Network Load Balancer (Internal)</span></h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                In the private subnet, the Network Load Balancer handles internal traffic between the SAP Gateway and SAP applications. It ensures low latency and high throughput for critical backend operations.
+                                                            </p>
                                                             
-                                                            <h4>Lambda Proxy</h4>
-                                                            <p>AWS Lambda allows you to run code in response to events without provisioning or managing servers. The Lambda proxy in this setup acts as a bridge, executing backend logic and integrating various AWS services with SAP.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">Lambda Proxy</h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                AWS Lambda allows you to run code in response to events without provisioning or managing servers. The Lambda proxy in this setup acts as a bridge, executing backend logic and integrating various AWS services with SAP.
+                                                            </p>
                                                             
-                                                            <h4>SAP Gateway and SAP Applications</h4>
-                                                            <p>These are the core components of your SAP environment, hosted within the private subnet for enhanced security. The SAP Gateway handles business logic and data processing, communicating with the SAP applications to perform various tasks.</p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mt-8 mb-3">SAP Gateway and SAP Applications</h4>
+                                                            <p className="text-neutral-400 bg-white/5 border border-white/5 p-5 rounded-xl">
+                                                                These are the core components of your SAP environment, hosted within the private subnet for enhanced security. The SAP Gateway handles business logic and data processing, communicating with the SAP applications to perform various tasks.
+                                                            </p>
                                                             
-                                                            <h3>How It All Comes Together</h3>
-                                                            <ul>
-                                                                <li><strong>User Interaction:</strong> Users interact with the system through mobile apps, websites, Echo, or IoT devices. These interactions are routed through the API Gateway, which handles security and traffic management.</li>
-                                                                <li><strong>Data Synchronization:</strong> AWS AppSync ensures that data is synchronized in real-time across all user interfaces, providing up-to-date information to the users.</li>
-                                                                <li><strong>Backend Processing:</strong> The API Gateway routes requests to the appropriate services. For instance, Lambda functions might execute specific logic, or the SAP Gateway processes business transactions.</li>
-                                                                <li><strong>Internal Traffic Management:</strong> The Network Load Balancer manages internal traffic between SAP components, ensuring smooth communication and high performance.</li>
-                                                                <li><strong>Security and Access Control:</strong> Amazon Cognito manages user authentication and authorization, ensuring that only authorized users have access to the system.</li>
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-8 tracking-tight">
+                                                                How It All Comes Together
+                                                            </h3>
+                                                            <ul className="space-y-4 mb-10 text-neutral-300">
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">User Interaction:</strong> Users interact with the system through mobile apps, websites, Echo, or IoT devices. These interactions are routed through the API Gateway, which handles security and traffic management.</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">Data Synchronization:</strong> AWS AppSync ensures that data is synchronized in real-time across all user interfaces, providing up-to-date information to the users.</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">Backend Processing:</strong> The API Gateway routes requests to the appropriate services. For instance, Lambda functions might execute specific logic, or the SAP Gateway processes business transactions.</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">Internal Traffic Management:</strong> The Network Load Balancer manages internal traffic between SAP components, ensuring smooth communication and high performance.</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">Security and Access Control:</strong> Amazon Cognito manages user authentication and authorization, ensuring that only authorized users have access to the system.</div></li>
                                                             </ul>
 
-                                                            <div className="my-8 relative w-full h-auto rounded-xl overflow-hidden bg-white/5 border border-white/10 p-4 flex justify-center">
+                                                            <div className="my-12 relative w-full h-auto rounded-xl overflow-hidden bg-white/5 border border-white/10 p-6 flex justify-center shadow-lg">
                                                                 <Image
                                                                     src="/blogs/SAP%20on%20AWS/SAP%20on%20AWS%20(2).png"
                                                                     alt="SAP on AWS Component Details"
                                                                     width={800}
                                                                     height={400}
-                                                                    className="w-full max-w-3xl h-auto object-contain rounded-lg"
+                                                                    className="w-full max-w-3xl h-auto object-contain rounded-lg shadow-sm"
                                                                 />
                                                             </div>
                                                             
-                                                            <h3>A Personal Touch: Why This Matters</h3>
-                                                            <p>As someone who has seen the evolution of enterprise systems, the integration of SAP on AWS is a game-changer. It combines the best of both worlds—SAP&apos;s powerful business applications and AWS&apos;s scalable cloud infrastructure. This setup not only enhances operational efficiency but also opens doors to innovative possibilities like voice-controlled operations and real-time data synchronization.</p>
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-6 tracking-tight">
+                                                                A Personal Touch: Why This Matters
+                                                            </h3>
                                                             
-                                                            <p>Imagine walking into your office and simply asking, &quot;Alexa, how&apos;s the sales performance this quarter?&quot; and getting a real-time update, thanks to the seamless integration of Echo and SAP on AWS. This is not just a vision for the future; it&apos;s a reality today.</p>
+                                                            <div className="border-l-4 border-blue-500 pl-6 py-2 my-8">
+                                                                <p className="text-neutral-300 text-lg italic leading-relaxed mb-4">
+                                                                    &quot;As someone who has seen the evolution of enterprise systems, the integration of SAP on AWS is a game-changer. It combines the best of both worlds—SAP&apos;s powerful business applications and AWS&apos;s scalable cloud infrastructure.&quot;
+                                                                </p>
+                                                            </div>
                                                             
-                                                            <h3>Conclusion</h3>
-                                                            <p>Integrating SAP on AWS is more than just a technological advancement; it&apos;s a strategic move towards a more agile, efficient, and innovative business environment. By leveraging the combined power of SAP&apos;s robust applications and AWS&apos;s flexible infrastructure, businesses can achieve new heights of success.</p>
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                This setup not only enhances operational efficiency but also opens doors to innovative possibilities like voice-controlled operations and real-time data synchronization. Imagine walking into your office and simply asking, <span className="text-white font-medium">&quot;Alexa, how&apos;s the sales performance this quarter?&quot;</span> and getting a real-time update, thanks to the seamless integration of Echo and SAP on AWS. This is not just a vision for the future; it&apos;s a reality today.
+                                                            </p>
                                                             
-                                                            <p>Whether you&apos;re an IT professional, a business leader, or a developer, understanding and embracing this integration can help you drive your organization forward in the digital age. So, let&apos;s embark on this journey together and unlock the full potential of SAP on AWS.</p>
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-6 tracking-tight">
+                                                                Conclusion
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-4">
+                                                                Integrating SAP on AWS is more than just a technological advancement; it&apos;s a strategic move towards a more agile, efficient, and innovative business environment. By leveraging the combined power of SAP&apos;s robust applications and AWS&apos;s flexible infrastructure, businesses can achieve new heights of success.
+                                                            </p>
+                                                            <p className="text-neutral-300 leading-relaxed mb-10">
+                                                                Whether you&apos;re an IT professional, a business leader, or a developer, understanding and embracing this integration can help you drive your organization forward in the digital age. So, let&apos;s embark on this journey together and unlock the full potential of SAP on AWS.
+                                                            </p>
                                                             
-                                                            <p><em>This blog post was written by Hemant Wakchaure. If you have any questions or would like to discuss the topic further, feel free to reach out to me. I&apos;m always happy to connect and share insights.</em></p>
-                                                            
-                                                            <p><a href="mailto:hemant.wakchaure29@gmail.com">hemant.wakchaure29@gmail.com</a></p>
-                                                            
-                                                            <p><em>Reference - <a href="https://aws.amazon.com/blogs/awsforsap/deploy-apis-for-sap-using-amazon-api-gateway/" target="_blank" rel="noopener noreferrer">https://aws.amazon.com/blogs/awsforsap/deploy-apis-for-sap-using-amazon-api-gateway/</a></em></p>
+                                                            <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-white/5 rounded-2xl p-8 mt-12 text-center">
+                                                                <p className="text-neutral-300 italic mb-4">
+                                                                    This blog post was written by <strong className="text-white not-italic text-lg">Hemant Wakchaure</strong>.
+                                                                </p>
+                                                                <p className="text-neutral-400 mb-6 text-sm">
+                                                                    If you have any questions or would like to discuss the topic further, feel free to reach out to me. I&apos;m always happy to connect and share insights.
+                                                                </p>
+                                                                <a href="mailto:hemant.wakchaure29@gmail.com" className="inline-block px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full transition-colors font-semibold shadow-lg shadow-blue-500/30">
+                                                                    hemant.wakchaure29@gmail.com
+                                                                </a>
+                                                                
+                                                                <p className="mt-8 text-xs text-neutral-500">
+                                                                    Reference - <a href="https://aws.amazon.com/blogs/awsforsap/deploy-apis-for-sap-using-amazon-api-gateway/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">AWS for SAP Documentation</a>
+                                                                </p>
+                                                            </div>
                                                         </>
                                                     ) : (
                                                         <div className="flex flex-col items-center justify-center py-12 text-center h-full">
