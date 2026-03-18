@@ -5,6 +5,7 @@ import Certifications from "@/components/Certifications";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import SAPCapabilities from "@/components/SAPCapabilities";
+import Blogs from "@/components/Blogs";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <SAPCapabilities />
+      <Blogs />
       <Projects />
       <Contact />
     </main>
