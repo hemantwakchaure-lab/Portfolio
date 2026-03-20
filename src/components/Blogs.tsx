@@ -122,7 +122,7 @@ export default function Blogs() {
                             ) : (
                                 // Fallback image if non exists or placeholder data
                                 <Image
-                                    src={blog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order%20-1.png" : "/blogs/placeholder.jpg"}
+                                    src={blog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-%203.PNG" : "/blogs/placeholder.jpg"}
                                     alt={blog.title}
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -196,7 +196,7 @@ export default function Blogs() {
                                             />
                                         ) : (
                                             <Image
-                                                src={selectedBlog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order%20-1.png" : "/blogs/placeholder.jpg"}
+                                                src={selectedBlog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-%203.PNG" : "/blogs/placeholder.jpg"}
                                                 alt={selectedBlog.title}
                                                 fill
                                                 className="object-cover opacity-60"
@@ -376,7 +376,7 @@ export default function Blogs() {
                                                             
                                                             <div className="my-10 relative w-full h-auto rounded-2xl overflow-hidden bg-white/5 border border-white/10 shadow-2xl">
                                                                 <Image
-                                                                    src="/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order%20-1.png"
+                                                                    src="/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-%203.PNG"
                                                                     alt="SAP Gen AI Automating Sales Order overview"
                                                                     width={1200}
                                                                     height={600}
@@ -472,7 +472,7 @@ export default function Blogs() {
                                                             
                                                             <div className="my-12 relative w-full h-auto rounded-xl overflow-hidden bg-white/5 border border-white/10 p-6 flex justify-center shadow-lg">
                                                                 <Image
-                                                                    src="/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order%20-2.png"
+                                                                    src="/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-%204.PNG"
                                                                     alt="SAP Gen AI Workflow components"
                                                                     width={800}
                                                                     height={400}
