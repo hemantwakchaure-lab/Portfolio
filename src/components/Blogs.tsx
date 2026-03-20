@@ -108,31 +108,11 @@ export default function Blogs() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-                            className="group relative h-[400px] rounded-3xl overflow-hidden cursor-pointer"
+                            className="group relative h-[400px] rounded-3xl overflow-hidden cursor-pointer bg-[#1a1a1a] border border-white/5 hover:border-blue-500/30 transition-all duration-300"
                             onClick={() => setSelectedBlog(blog as BlogPost)}
                         >
-                            {/* Background Image Area */}
-                            {blog.coverImage ? (
-                                <Image
-                                    src={urlFor(blog.coverImage).format('webp').width(800).url()}
-                                    alt={blog.title}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
-                            ) : (
-                                // Fallback image if non exists or placeholder data
-                                <Image
-                                    src={blog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-%203.PNG" : "/blogs/placeholder.jpg"}
-                                    alt={blog.title}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                    onError={(e) => {
-                                        // Fallback gradient if file doesn't exist
-                                        e.currentTarget.style.display = 'none';
-                                        e.currentTarget.parentElement?.classList.add('bg-gradient-to-br', 'from-blue-900', 'to-neutral-900');
-                                    }}
-                                />
-                            )}
+                            {/* Background decoration replaced the image */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
                             
                             {/* Dark Gradient Overlay for Text Readability */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent transition-opacity duration-300 group-hover:opacity-90" />
