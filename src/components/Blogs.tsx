@@ -49,6 +49,15 @@ export default function Blogs() {
     // Placeholder data until Sanity is populated
     const placeholderBlogs = [
         {
+            _id: "4",
+            title: "RISE vs GROW with SAP",
+            publishedAt: new Date().toISOString(),
+            excerpt: "Choosing the right SAP program can feel overwhelming, especially when every option sounds like it's tailor-made for success. GROW with SAP and RISE with SAP both offer powerful tools to transform your business...",
+            coverImage: null,
+            content: null,
+            slug: { current: 'rise-vs-grow-with-sap' }
+        },
+        {
             _id: "1",
             title: "SAP on AWS",
             publishedAt: new Date().toISOString(),
@@ -176,7 +185,7 @@ export default function Blogs() {
                                             />
                                         ) : (
                                             <Image
-                                                src={selectedBlog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-%203.PNG" : "/blogs/placeholder.jpg"}
+                                                src={selectedBlog._id === "4" ? "/blogs/RISE%20vs%20GROW%20with%20SAP/1120x576_Picture_1-min_3_11zon.png" : selectedBlog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-%203.PNG" : "/blogs/placeholder.jpg"}
                                                 alt={selectedBlog.title}
                                                 fill
                                                 className="object-cover opacity-60"
@@ -559,6 +568,259 @@ export default function Blogs() {
                                                                 <a href="mailto:hemant.wakchaure29@gmail.com" className="inline-block px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full transition-colors font-semibold shadow-lg shadow-blue-500/30">
                                                                     hemant.wakchaure29@gmail.com
                                                                 </a>
+                                                            </div>
+                                                        </>
+                                                    ) : selectedBlog._id === "4" ? (
+                                                        <>
+                                                            <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light mb-6">
+                                                                Choosing the right SAP program can feel overwhelming, especially when every option sounds like it’s tailor-made for success. <span className="font-semibold text-white">GROW with SAP</span> and <span className="font-semibold text-white">RISE with SAP</span> both offer powerful tools to transform your business, but they cater to different needs. Knowing the difference isn’t just helpful — it’s essential to avoiding costly missteps.
+                                                            </p>
+                                                            <p className="text-lg md:text-xl text-neutral-300 leading-relaxed font-light mb-8">
+                                                                So, which of the solutions match your goals and ambitions? This guide will break down what sets these systems apart, helping you choose the option that delivers real value for your business.
+                                                            </p>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-12 mb-6 tracking-tight">
+                                                                Two Bundle Offerings of SAP Cloud ERP
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-4">
+                                                                SAP’s GROW and RISE solutions are built on the foundation of cloud ERP, a modern approach to managing business operations. The core of SAP’s cloud ERP strategy is SAP S/4HANA Cloud, which comes in two versions: the Public Edition and the Private Edition. These versions form the backbone of SAP’s GROW with SAP and RISE with SAP packages, each tailored to specific business needs.
+                                                            </p>
+                                                            <p className="text-neutral-300 leading-relaxed mb-10">
+                                                                Although each is created for different needs, they share the advantages of cloud-based systems: <span className="text-white font-medium">real-time data access, faster adaptability, and seamless integration</span>.
+                                                            </p>
+
+                                                            <div className="my-10 relative w-full h-auto rounded-2xl overflow-hidden bg-white/5 border border-white/10 shadow-2xl flex justify-center p-6">
+                                                                <Image
+                                                                    src="/blogs/RISE%20vs%20GROW%20with%20SAP/1120x576_Picture_1-min_3_11zon.png"
+                                                                    alt="GROW vs RISE with SAP"
+                                                                    width={800}
+                                                                    height={400}
+                                                                    className="w-full max-w-4xl h-auto object-contain rounded-lg shadow-sm"
+                                                                    onError={(e) => {
+                                                                        e.currentTarget.style.display = 'none';
+                                                                        e.currentTarget.parentElement?.classList.add('hidden');
+                                                                    }}
+                                                                />
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-white mt-12 mb-6 tracking-tight border-b border-white/10 pb-4">
+                                                                What Is GROW with SAP?
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                GROW with SAP is a solution built for small and medium-sized businesses looking for a fast, affordable, and effective way to start using cloud ERP. Its main goal is to help companies move quickly while keeping things simple.
+                                                            </p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mb-4">Key components include:</h4>
+                                                            <ul className="space-y-4 mb-8 text-neutral-300">
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">SAP S/4HANA Cloud, Public Edition:</strong> a ready-to-use ERP system in the cloud that handles essential business functions like finance, sales, and supply chain.</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">Preconfigured Best Practices:</strong> industry-proven practices that simplify setup and save time.</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">Services for rapid cloud ERP implementation:</strong> a package of tools and resources to guide businesses through the setup process. It includes SAP Activate Methodology, which ensures that everything is deployed efficiently and without unnecessary delays.</div></li>
+                                                            </ul>
+
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                This package is a great fit for businesses that need quick results, don’t have large IT departments, and want a system that grows as their operations scale. It offers a number of convenient benefits, such as:
+                                                            </p>
+                                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+                                                                <div className="bg-[#121212] border border-white/5 p-4 rounded-xl flex items-center group hover:border-blue-500/30 transition-colors">
+                                                                    <div className="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center mr-4"><span className="text-blue-400">⚡</span></div>
+                                                                    <span className="text-neutral-200">Fast setup leveraging Best Practices</span>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-4 rounded-xl flex items-center group hover:border-green-500/30 transition-colors">
+                                                                    <div className="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center mr-4"><span className="text-green-400">💰</span></div>
+                                                                    <span className="text-neutral-200">Lower upfront costs compared to traditional ERP</span>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-4 rounded-xl flex items-center group hover:border-purple-500/30 transition-colors">
+                                                                    <div className="w-8 h-8 rounded-full bg-purple-500/10 flex items-center justify-center mr-4"><span className="text-purple-400">👤</span></div>
+                                                                    <span className="text-neutral-200">User-friendly interface for quick adoption</span>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-4 rounded-xl flex items-center group hover:border-orange-500/30 transition-colors">
+                                                                    <div className="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center mr-4"><span className="text-orange-400">📈</span></div>
+                                                                    <span className="text-neutral-200">Scalability for future growth</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-white mt-12 mb-6 tracking-tight border-b border-white/10 pb-4">
+                                                                What is RISE with SAP?
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                RISE with SAP is a package for businesses aiming to modernize their systems and operations. It combines cloud ERP with analytics, process optimization, and collaboration tools — all in one subscription.
+                                                            </p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mb-4">The solution offers the following features:</h4>
+                                                            <ul className="space-y-4 mb-8 text-neutral-300">
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">SAP S/4HANA Cloud Private Editions:</strong> flexible deployment options to meet unique business needs.</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">Business process intelligence:</strong> tools that analyze workflows and suggest improvements.</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">SAP Business Network Starter Pack:</strong> connects businesses with suppliers and partners for seamless collaboration.</div></li>
+                                                                <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">●</span> <div><strong className="text-white">Built-in advanced tools:</strong> such as analytics and AI, with automated system updates.</div></li>
+                                                            </ul>
+
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                RISE with SAP is the best choice for mid-sized companies to large enterprises with complex processes that need customized ERP solutions.
+                                                            </p>
+                                                            <h4 className="text-xl font-bold text-blue-300 mb-4">Business benefits you'll receive with this package:</h4>
+                                                            <ul className="space-y-4 mb-12 text-neutral-300">
+                                                                <li className="flex items-center"><span className="text-green-400 mr-3">✔</span> Tools that improve operational efficiency by automating routine tasks.</li>
+                                                                <li className="flex items-center"><span className="text-green-400 mr-3">✔</span> A single subscription that covers software, infrastructure, and support.</li>
+                                                                <li className="flex items-center"><span className="text-green-400 mr-3">✔</span> Easy integration with SAP and third-party systems.</li>
+                                                            </ul>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-8 tracking-tight">
+                                                                Key Differences Between GROW with SAP and RISE with SAP
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-8">
+                                                                Now that we’ve covered the basics of these two SAP solutions, let’s explore the differences between them.
+                                                            </p>
+
+                                                            <div className="space-y-8 mb-12">
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-blue-500/30 transition-colors">
+                                                                    <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 rounded-l-xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-3">🎯 Target market</h4>
+                                                                    <p className="text-neutral-300 mb-2"><strong className="text-blue-300">GROW with SAP:</strong> Small and medium-sized businesses looking for simplicity and speed. Suits straightforward processes without heavy customization.</p>
+                                                                    <p className="text-neutral-300"><strong className="text-purple-300">RISE with SAP:</strong> Larger enterprises with complex needs. Offers flexibility for refined processes and long-term digital transformation.</p>
+                                                                </div>
+
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-purple-500/30 transition-colors">
+                                                                    <div className="absolute top-0 left-0 w-1 h-full bg-purple-500 rounded-l-xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-3">📦 Scope of offering</h4>
+                                                                    <p className="text-neutral-300 mb-2"><strong className="text-blue-300">GROW with SAP:</strong> ERP-focused, managing key operations like finance, procurement, and sales.</p>
+                                                                    <p className="text-neutral-300"><strong className="text-purple-300">RISE with SAP:</strong> Full transformation package with process optimization, collaboration tools, and Business Network access.</p>
+                                                                </div>
+
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-green-500/30 transition-colors">
+                                                                    <div className="absolute top-0 left-0 w-1 h-full bg-green-500 rounded-l-xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-3">⚙️ Customization and flexibility</h4>
+                                                                    <p className="text-neutral-300 mb-2"><strong className="text-blue-300">GROW with SAP:</strong> Standard configurations and industry-proven best practices. Limited large-scale adjustments.</p>
+                                                                    <p className="text-neutral-300"><strong className="text-purple-300">RISE with SAP:</strong> Extensive customization to adapt the system to unique workflow requirements and third-party integrations.</p>
+                                                                </div>
+
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-orange-500/30 transition-colors">
+                                                                    <div className="absolute top-0 left-0 w-1 h-full bg-orange-500 rounded-l-xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-3">⏱️ Implementation timeframe</h4>
+                                                                    <p className="text-neutral-300 mb-2"><strong className="text-blue-300">GROW with SAP:</strong> Built for speed. Preconfigured best practices enable businesses to run in a few months.</p>
+                                                                    <p className="text-neutral-300 mb-2"><strong className="text-purple-300">RISE with SAP:</strong> Requires detailed implementation. Includes planning, customization, and system alignment.</p>
+                                                                    <p className="text-sm text-neutral-400 italic mt-2 bg-white/5 p-3 rounded-lg border border-white/5">Organizations using RISE must proactively consider data security, integration complexities, and change management.</p>
+                                                                </div>
+
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-red-500/30 transition-colors">
+                                                                    <div className="absolute top-0 left-0 w-1 h-full bg-red-500 rounded-l-xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-3">💲 Pricing models</h4>
+                                                                    <p className="text-neutral-300 mb-2"><strong className="text-blue-300">GROW with SAP:</strong> Simple subscription pricing, typically lower costs. Accessible to smaller businesses.</p>
+                                                                    <p className="text-neutral-300"><strong className="text-purple-300">RISE with SAP:</strong> Complex pricing structure bundling software, infrastructure, and support under one fee.</p>
+                                                                </div>
+
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-cyan-500/30 transition-colors">
+                                                                    <div className="absolute top-0 left-0 w-1 h-full bg-cyan-500 rounded-l-xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                                                                    <h4 className="text-xl font-bold text-white mb-3">☁️ Cloud deployment options</h4>
+                                                                    <p className="text-neutral-300 mb-2"><strong className="text-blue-300">GROW with SAP:</strong> Public cloud only — scalable and cost-effective.</p>
+                                                                    <p className="text-neutral-300"><strong className="text-purple-300">RISE with SAP:</strong> Public and private cloud options, offering flexibility based on data security and compliance needs.</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <h3 className="text-2xl font-bold text-white mt-12 mb-6">Comparison Summary</h3>
+                                                            <div className="overflow-x-auto mb-16 border border-white/10 rounded-xl shadow-lg">
+                                                                <table className="w-full text-left text-sm text-neutral-300">
+                                                                    <thead className="text-xs uppercase bg-[#1a1a1a] text-neutral-400 border-b border-white/10">
+                                                                        <tr>
+                                                                            <th className="px-6 py-5">Feature</th>
+                                                                            <th className="px-6 py-5 text-blue-300">GROW with SAP</th>
+                                                                            <th className="px-6 py-5 text-purple-300">RISE with SAP</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody className="divide-y divide-white/5 bg-[#121212]">
+                                                                        <tr className="hover:bg-white/5 transition-colors group">
+                                                                            <td className="px-6 py-4 font-bold text-white group-hover:text-blue-200">Target market</td>
+                                                                            <td className="px-6 py-4">Small and medium-sized businesses (SMEs)</td>
+                                                                            <td className="px-6 py-4">Large enterprises</td>
+                                                                        </tr>
+                                                                        <tr className="hover:bg-white/5 transition-colors group">
+                                                                            <td className="px-6 py-4 font-bold text-white group-hover:text-blue-200">Scope of offering</td>
+                                                                            <td className="px-6 py-4">ERP-focused</td>
+                                                                            <td className="px-6 py-4">Comprehensive transformation package</td>
+                                                                        </tr>
+                                                                        <tr className="hover:bg-white/5 transition-colors group">
+                                                                            <td className="px-6 py-4 font-bold text-white group-hover:text-blue-200">Customization</td>
+                                                                            <td className="px-6 py-4">Standard configurations and limited adjustments</td>
+                                                                            <td className="px-6 py-4">Extensive customization and process adaptability</td>
+                                                                        </tr>
+                                                                        <tr className="hover:bg-white/5 transition-colors group">
+                                                                            <td className="px-6 py-4 font-bold text-white group-hover:text-blue-200">Timeframe</td>
+                                                                            <td className="px-6 py-4">Quick deployment, often within a few months</td>
+                                                                            <td className="px-6 py-4">Longer timeline due to detailed planning</td>
+                                                                        </tr>
+                                                                        <tr className="hover:bg-white/5 transition-colors group">
+                                                                            <td className="px-6 py-4 font-bold text-white group-hover:text-blue-200">Pricing models</td>
+                                                                            <td className="px-6 py-4">Simple subscription pricing</td>
+                                                                            <td className="px-6 py-4">Bundled subscription</td>
+                                                                        </tr>
+                                                                        <tr className="hover:bg-white/5 transition-colors group">
+                                                                            <td className="px-6 py-4 font-bold text-white group-hover:text-blue-200">Included tools</td>
+                                                                            <td className="px-6 py-4">Essential ERP tools and prebuilt templates</td>
+                                                                            <td className="px-6 py-4">Advanced tools, process optimization, network access</td>
+                                                                        </tr>
+                                                                        <tr className="hover:bg-white/5 transition-colors group">
+                                                                            <td className="px-6 py-4 font-bold text-white group-hover:text-blue-200">Cloud options</td>
+                                                                            <td className="px-6 py-4">Public cloud only</td>
+                                                                            <td className="px-6 py-4">Public or private cloud options</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-6 tracking-tight">
+                                                                Want to Implement GROW with SAP?
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                If you believe GROW with SAP matches your need for a quick and efficient cloud ERP solution, you have two package options: <strong className="text-white">Base</strong> and <strong className="text-white">Premium</strong>.
+                                                            </p>
+                                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-t-4 border-t-blue-500 hover:bg-white/5 transition-colors shadow-lg">
+                                                                    <h4 className="text-xl font-bold text-white mb-3">Base Edition</h4>
+                                                                    <p className="text-neutral-400 text-sm leading-relaxed">Designed for smaller businesses or those in emerging economies, offering an affordable entry point. It includes licenses for SAP BTP, finance tools, and basic Ariba Buying features to streamline procurement.</p>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-t-4 border-t-purple-500 hover:bg-white/5 transition-colors shadow-lg">
+                                                                    <h4 className="text-xl font-bold text-white mb-3">Premium Edition</h4>
+                                                                    <p className="text-neutral-400 text-sm leading-relaxed">Aimed at midsize and larger organizations. Builds on the Base edition with added capabilities like expanded finance tools, SAP Analytics Cloud Planning, SAP Sales Cloud, and Concur Expense Professional.</p>
+                                                                </div>
+                                                            </div>
+                                                            <p className="text-neutral-300 leading-relaxed mb-12 bg-white/5 p-4 rounded-xl border border-white/10 text-center text-sm">
+                                                                Both editions include Cloud Platform Enterprise Agreement (CPEA) credits for eligible SAP BTP services and SAP Build tools to develop apps, automate workflows, and design portals.
+                                                            </p>
+
+                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-6 tracking-tight">
+                                                                Or Will RISE with SAP Better Suit Your Goals?
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                If you’re interested in RISE with SAP, you have three options: <strong className="text-white">Base, Premium, and Premium Plus</strong>.
+                                                            </p>
+                                                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-t-4 border-t-blue-400 hover:-translate-y-1 transition-transform shadow-lg">
+                                                                    <h4 className="text-lg font-bold text-white mb-2">Base</h4>
+                                                                    <p className="text-neutral-400 text-sm">SAP S/4HANA Cloud Private Edition with a simplified setup, perfect for smaller companies starting their cloud journey.</p>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-t-4 border-t-purple-400 hover:-translate-y-1 transition-transform shadow-lg">
+                                                                    <h4 className="text-lg font-bold text-white mb-2">Premium</h4>
+                                                                    <p className="text-neutral-400 text-sm">Introduces AI-powered features, process automation, low-code tools, and supplier network access. Ideal for growing businesses.</p>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-t-4 border-t-pink-400 hover:-translate-y-1 transition-transform shadow-lg">
+                                                                    <h4 className="text-lg font-bold text-white mb-2">Premium Plus</h4>
+                                                                    <p className="text-neutral-400 text-sm">Takes it further with advanced AI scenarios, sustainability tools, and robust financial management capabilities.</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-white mt-16 mb-6 tracking-tight border-b border-white/10 pb-4">
+                                                                RISE and GROW Together With LeverX
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                Still deciding between GROW with SAP and RISE with SAP? Or have you already made your choice and want to bring it to life? Partnering with <strong className="text-white">LeverX</strong> means gaining access to expertise shaped by over 950 successful projects for more than 800 clients worldwide, including industry leaders from the Fortune 500 list.
+                                                            </p>
+                                                            <p className="text-neutral-300 leading-relaxed mb-10">
+                                                                We don’t just implement solutions; we dive into your business goals and uncover opportunities you might not have considered. Our team brings practical insights and hands-on support to every step of your SAP journey, whether it’s overcoming challenges, optimizing processes, or scaling operations with confidence.
+                                                            </p>
+                                                            
+                                                            <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 text-center shadow-[0_0_30px_rgba(59,130,246,0.15)] flex flex-col items-center">
+                                                                <h4 className="text-2xl md:text-3xl font-bold text-white mb-6">Partner with us and let’s work together to make your SAP project a success.</h4>
+                                                                <button className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-neutral-200 hover:scale-105 transition-all shadow-lg shadow-white/10 uppercase tracking-wide text-sm flex items-center gap-2">
+                                                                    Book a free consultation
+                                                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                                                                </button>
                                                             </div>
                                                         </>
                                                     ) : (
