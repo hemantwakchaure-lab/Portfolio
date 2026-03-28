@@ -764,64 +764,94 @@ export default function Blogs() {
                                                                 </table>
                                                             </div>
 
-                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-6 tracking-tight">
-                                                                Want to Implement GROW with SAP?
-                                                            </h3>
-                                                            <p className="text-neutral-300 leading-relaxed mb-6">
-                                                                If you believe GROW with SAP matches your need for a quick and efficient cloud ERP solution, you have two package options: <strong className="text-white">Base</strong> and <strong className="text-white">Premium</strong>.
-                                                            </p>
-                                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-t-4 border-t-blue-500 hover:bg-white/5 transition-colors shadow-lg">
-                                                                    <h4 className="text-xl font-bold text-white mb-3">Base Edition</h4>
-                                                                    <p className="text-neutral-400 text-sm leading-relaxed">Designed for smaller businesses or those in emerging economies, offering an affordable entry point. It includes licenses for SAP BTP, finance tools, and basic Ariba Buying features to streamline procurement.</p>
-                                                                </div>
-                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-t-4 border-t-purple-500 hover:bg-white/5 transition-colors shadow-lg">
-                                                                    <h4 className="text-xl font-bold text-white mb-3">Premium Edition</h4>
-                                                                    <p className="text-neutral-400 text-sm leading-relaxed">Aimed at midsize and larger organizations. Builds on the Base edition with added capabilities like expanded finance tools, SAP Analytics Cloud Planning, SAP Sales Cloud, and Concur Expense Professional.</p>
-                                                                </div>
-                                                            </div>
-                                                            <p className="text-neutral-300 leading-relaxed mb-12 bg-white/5 p-4 rounded-xl border border-white/10 text-center text-sm">
-                                                                Both editions include Cloud Platform Enterprise Agreement (CPEA) credits for eligible SAP BTP services and SAP Build tools to develop apps, automate workflows, and design portals.
-                                                            </p>
-
-                                                            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-16 mb-6 tracking-tight">
-                                                                Or Will RISE with SAP Better Suit Your Goals?
-                                                            </h3>
-                                                            <p className="text-neutral-300 leading-relaxed mb-6">
-                                                                If you’re interested in RISE with SAP, you have three options: <strong className="text-white">Base, Premium, and Premium Plus</strong>.
-                                                            </p>
-                                                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-t-4 border-t-blue-400 hover:-translate-y-1 transition-transform shadow-lg">
-                                                                    <h4 className="text-lg font-bold text-white mb-2">Base</h4>
-                                                                    <p className="text-neutral-400 text-sm">SAP S/4HANA Cloud Private Edition with a simplified setup, perfect for smaller companies starting their cloud journey.</p>
-                                                                </div>
-                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-t-4 border-t-purple-400 hover:-translate-y-1 transition-transform shadow-lg">
-                                                                    <h4 className="text-lg font-bold text-white mb-2">Premium</h4>
-                                                                    <p className="text-neutral-400 text-sm">Introduces AI-powered features, process automation, low-code tools, and supplier network access. Ideal for growing businesses.</p>
-                                                                </div>
-                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-t-4 border-t-pink-400 hover:-translate-y-1 transition-transform shadow-lg">
-                                                                    <h4 className="text-lg font-bold text-white mb-2">Premium Plus</h4>
-                                                                    <p className="text-neutral-400 text-sm">Takes it further with advanced AI scenarios, sustainability tools, and robust financial management capabilities.</p>
-                                                                </div>
-                                                            </div>
-
                                                             <h3 className="text-3xl font-extrabold text-white mt-16 mb-6 tracking-tight border-b border-white/10 pb-4">
-                                                                RISE and GROW Together With LeverX
+                                                                Effective Implementation
                                                             </h3>
                                                             <p className="text-neutral-300 leading-relaxed mb-6">
-                                                                Still deciding between GROW with SAP and RISE with SAP? Or have you already made your choice and want to bring it to life? Partnering with <strong className="text-white">LeverX</strong> means gaining access to expertise shaped by over 950 successful projects for more than 800 clients worldwide, including industry leaders from the Fortune 500 list.
+                                                                Effective implementation is the foundation of every successful software deployment project. The more organised and thorough the process, the more empowered your business will be to leverage the full potential of your software.
                                                             </p>
-                                                            <p className="text-neutral-300 leading-relaxed mb-10">
-                                                                We don’t just implement solutions; we dive into your business goals and uncover opportunities you might not have considered. Our team brings practical insights and hands-on support to every step of your SAP journey, whether it’s overcoming challenges, optimizing processes, or scaling operations with confidence.
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                For deploying SAP cloud applications such as SAP SuccessFactors and S/4HANA, SAP&apos;s cloud-based ERP solution, your business, along with your implementation partner, can use <strong className="text-white">SAP Activate</strong>, SAP&apos;s powerful methodology for enabling agile SAP project implementation. It consists of three pillars: SAP Best Practices, guided configurations, and a six-phase implementation project lifecycle, and it&apos;s an essential tool for ensuring a solution is properly configured for your needs and meets all of your business&apos;s requirements.
                                                             </p>
-                                                            
-                                                            <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 text-center shadow-[0_0_30px_rgba(59,130,246,0.15)] flex flex-col items-center">
-                                                                <h4 className="text-2xl md:text-3xl font-bold text-white mb-6">Partner with us and let’s work together to make your SAP project a success.</h4>
-                                                                <button className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-neutral-200 hover:scale-105 transition-all shadow-lg shadow-white/10 uppercase tracking-wide text-sm flex items-center gap-2">
-                                                                    Book a free consultation
-                                                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                                                </button>
+                                                            <p className="text-neutral-300 leading-relaxed mb-12">
+                                                                Before we unpack the methodology, let&apos;s explore why using SAP Activate is so important.
+                                                            </p>
+
+                                                            <div className="bg-[#121212] border border-white/5 p-6 rounded-xl border-l-4 border-l-blue-500 mb-12 shadow-lg">
+                                                                <h4 className="text-2xl font-bold text-white mb-4">Why Use SAP Activate?</h4>
+                                                                <p className="text-neutral-300 leading-relaxed mb-4">
+                                                                    Whether your business is looking to deploy SAP cloud applications for the first time or you&apos;re ready to migrate or upgrade to SAP cloud products, you&apos;ll need to follow a series of steps and best practices to safely transition from project scope to going live.
+                                                                </p>
+                                                                <p className="text-neutral-300 leading-relaxed">
+                                                                    With SAP Activate, you can minimise the risk of human error and experience seamless integrations with other SAP cloud software and third-party applications. Your SAP implementation partner will work with your teams through each stage, ensuring all deliverables are met and helping you take an agile approach, so your software is configured to best serve business goals.
+                                                                </p>
                                                             </div>
+
+                                                            <div className="bg-white/5 border border-white/10 p-6 rounded-xl mb-12">
+                                                                <h4 className="text-2xl font-bold text-white mb-4">How Is SAP Activate Different Than ASAP Methodology?</h4>
+                                                                <p className="text-neutral-300 leading-relaxed mb-4">
+                                                                    SAP Activate is the most advanced implementation and project management methodology for SAP customers. It builds on the foundations of ASAP methodology, which is commonly used to implement SAP on-premise solutions.
+                                                                </p>
+                                                                <p className="text-neutral-300 leading-relaxed">
+                                                                    Because SAP is constantly evolving its products, it needed a more dynamic system to help customers take advantage of the huge and ever-evolving range of tech stacks, configurations, and destinations that are possible. With SAP Activate, customers can more easily modernise their software stack to suit business needs. It also includes explicit support for both waterfall and agile methods.
+                                                                </p>
+                                                            </div>
+
+                                                            <h3 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mt-12 mb-6 tracking-tight">
+                                                                SAP Best Practices and Guided Configuration Content
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-6">
+                                                                SAP has created a library of accessible content and other tools to help SAP customers, and their SAP S/4HANA and SuccessFactors implementation partners to support in the fulfilment of agreed project activities underpinned by the SAP Activate methodology.
+                                                            </p>
+                                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-blue-500/30 transition-colors">
+                                                                    <div className="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center mb-4"><span className="text-blue-400 font-bold">1</span></div>
+                                                                    <h4 className="font-bold text-white mb-2">SAP Best Practices</h4>
+                                                                    <p className="text-neutral-400 text-sm leading-relaxed">Combines over 45 years of SAP&apos;s industry-specific knowledge and experience with the most up-to-date best practices for integration, migration, and extensibility. It includes roles and responsibilities, standard test scripts, and business process flows. This is a cloud-based reference solution that you can use to access real-time updates to best practices.</p>
+                                                                </div>
+                                                                <div className="bg-[#121212] border border-white/5 p-6 rounded-xl relative group hover:border-purple-500/30 transition-colors">
+                                                                    <div className="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center mb-4"><span className="text-purple-400 font-bold">2</span></div>
+                                                                    <h4 className="font-bold text-white mb-2">Guided Configuration</h4>
+                                                                    <p className="text-neutral-400 text-sm leading-relaxed">Includes administration tools, setup wizards, historical content, and how-to guides on product and implementation topics. The purpose of this pillar of the SAP Activate framework is to simplify the process of configuring your SAP system with a self-service configuration user experience.</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <h3 className="text-3xl font-extrabold text-white mt-16 mb-8 tracking-tight border-b border-white/10 pb-4">
+                                                                What SAP Activate&apos;s Six-Phase Implementation Looks Like
+                                                            </h3>
+                                                            <p className="text-neutral-300 leading-relaxed mb-8">
+                                                                The SAP S/4HANA and SAP SuccessFactors implementation methodology consist of a six-phase project lifecycle. The six phases are:
+                                                            </p>
+
+                                                            <div className="space-y-4 mb-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-blue-500 before:via-purple-500 before:to-pink-500">
+                                                                {[
+                                                                    { title: "Discover", desc: "Define goals based on where your company is within its SAP journey. This phase involves technical research, which is conducted by your SAP SuccessFactors consulting partner." },
+                                                                    { title: "Prepare", desc: "Set up a project plan, which will draw upon details from the Discover phase, including your migration strategy and IT management approach." },
+                                                                    { title: "Explore", desc: "Refine business requirements, confirm businesses processes, review details and prepare for implementation and system conversion." },
+                                                                    { title: "Realise", desc: "Development environment build and test the configuration and migration process while finalising end-user training materials and documentation." },
+                                                                    { title: "Deploy", desc: "Setup the production system and IT infrastructure, migrate organisation data and complete all end-user training." },
+                                                                    { title: "Run", desc: "Make adjustments to system settings, configure new tools, and take other steps to fine-tune the software now that it's deployed." }
+                                                                ].map((phase, i) => (
+                                                                    <div key={i} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                                                                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#1a1a1a] shadow absolute left-0 md:mx-auto md:left-1/2 md:-translate-x-1/2 border border-blue-500 group-hover:bg-blue-600 transition-colors z-10 text-sm font-bold text-white">
+                                                                            {i + 1}
+                                                                        </div>
+                                                                        <div className="w-full pl-14 md:w-5/12 md:pl-0 md:px-8">
+                                                                            <div className="p-5 bg-[#121212] rounded-xl border border-white/5 group-hover:border-blue-500/30 transition-colors shadow-sm">
+                                                                                <h4 className="font-bold text-white mb-2 text-lg">{phase.title}</h4>
+                                                                                <p className="text-neutral-400 text-sm leading-relaxed">{phase.desc}</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+
+                                                            <p className="text-neutral-300 leading-relaxed mb-6 bg-white/5 p-6 rounded-xl border-l-4 border-l-purple-500">
+                                                                Within those phases, your teams will work with the main building blocks of the methodology: collections of related tasks referred to as streams. As you move through a specific stream, you&apos;ll achieve one or more pre-determined deliverables.
+                                                            </p>
+                                                            <p className="text-neutral-300 leading-relaxed mb-12">
+                                                                The streams are then grouped into milestones known as Quality Gates or Q-Gates. Each Q-Gate marks the completion of one of the first five phases. The purpose of the Q-Gates is to give stakeholders the opportunity to evaluate the project&apos;s progress and confirm that all deliverables have been met. Once this is done, the project moves on to the next phases.
+                                                            </p>
                                                         </>
                                                     ) : (
                                                         <div className="flex flex-col items-center justify-center py-12 text-center h-full">
