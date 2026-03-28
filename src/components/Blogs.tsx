@@ -886,6 +886,16 @@ export default function Blogs() {
                                                                     Furthermore, the global BPM market is projected to reach $30.12 billion by 2027, growing at a CAGR of 11.9% from 2020 to 2027. These statistics highlight the growing importance of process excellence in driving business success and underscore the need for robust tools and methodologies to achieve it.
                                                                 </p>
 
+                                                                <div className="my-10 relative w-full h-auto rounded-2xl overflow-hidden bg-white/5 border border-white/10 shadow-2xl flex justify-center p-6 bg-gradient-to-br from-[#121212] to-neutral-900 absolute">
+                                                                    <Image
+                                                                        src="/blogs/SAP%20Signavio/signavio-header.PNG"
+                                                                        alt="SAP Signavio"
+                                                                        width={800}
+                                                                        height={400}
+                                                                        className="rounded-xl object-cover w-full max-w-4xl shadow-lg border border-white/5"
+                                                                    />
+                                                                </div>
+
                                                                 <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mt-12 mb-6 tracking-tight">
                                                                     Enter SAP Signavio
                                                                 </h3>
