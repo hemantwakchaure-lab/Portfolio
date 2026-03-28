@@ -655,7 +655,7 @@ export default function Blogs() {
                                                             <p className="text-neutral-300 leading-relaxed mb-6">
                                                                 RISE with SAP is the best choice for mid-sized companies to large enterprises with complex processes that need customized ERP solutions.
                                                             </p>
-                                                            <h4 className="text-xl font-bold text-blue-300 mb-4">Business benefits you'll receive with this package:</h4>
+                                                            <h4 className="text-xl font-bold text-blue-300 mb-4">Business benefits you&apos;ll receive with this package:</h4>
                                                             <ul className="space-y-4 mb-12 text-neutral-300">
                                                                 <li className="flex items-center"><span className="text-green-400 mr-3">✔</span> Tools that improve operational efficiency by automating routine tasks.</li>
                                                                 <li className="flex items-center"><span className="text-green-400 mr-3">✔</span> A single subscription that covers software, infrastructure, and support.</li>
