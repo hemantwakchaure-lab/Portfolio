@@ -194,7 +194,7 @@ export default function Blogs() {
                                             />
                                         ) : (
                                             <Image
-                                                src={selectedBlog._id === "5" ? "/blogs/SAP%20Signavio/signavio-header.png" : selectedBlog._id === "4" ? "/blogs/RISE%20vs%20GROW%20with%20SAP/1120x576_Picture_1-min_3_11zon.png" : selectedBlog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-%203.PNG" : "/blogs/placeholder.jpg"}
+                                                src={selectedBlog._id === "5" ? "/blogs/SAP%20Signavio/signavio-header.PNG" : selectedBlog._id === "4" ? "/blogs/RISE%20vs%20GROW%20with%20SAP/1120x576_Picture_1-min_3_11zon.png" : selectedBlog._id === "2" ? "/blogs/SAP%20Gen%20AI%20automating%20Sales%20Order/SAP%20Gen%20AI%20automating%20Sales%20Order%20-%203.PNG" : "/blogs/placeholder.jpg"}
                                                 alt={selectedBlog.title}
                                                 fill
                                                 className="object-cover opacity-60"
