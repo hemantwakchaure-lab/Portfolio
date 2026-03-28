@@ -852,6 +852,20 @@ export default function Blogs() {
                                                             <p className="text-neutral-300 leading-relaxed mb-12">
                                                                 The streams are then grouped into milestones known as Quality Gates or Q-Gates. Each Q-Gate marks the completion of one of the first five phases. The purpose of the Q-Gates is to give stakeholders the opportunity to evaluate the project&apos;s progress and confirm that all deliverables have been met. Once this is done, the project moves on to the next phases.
                                                             </p>
+
+                                                            <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-white/5 rounded-2xl p-8 mt-12 text-center shadow-lg">
+                                                                <span className="text-3xl mb-4 block">👤</span>
+                                                                <p className="text-neutral-300 italic mb-4">
+                                                                    This research and documentation was compiled by <strong className="text-white not-italic text-lg">Hemant Wakchaure</strong> during one of his deliveries as an <strong className="text-blue-300 not-italic">Engineering Project Manager</strong>.
+                                                                </p>
+                                                                <p className="text-neutral-400 mb-6 text-sm">
+                                                                    Get in touch for more detailed information or collaboration opportunities!
+                                                                </p>
+                                                                <a href="mailto:hemant.wakchaure29@gmail.com" className="inline-flex items-center gap-2 px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full transition-colors shadow-lg shadow-blue-500/30">
+                                                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                                                    hemant.wakchaure29@gmail.com
+                                                                </a>
+                                                            </div>
                                                         </>
                                                     ) : (
                                                         <div className="flex flex-col items-center justify-center py-12 text-center h-full">
